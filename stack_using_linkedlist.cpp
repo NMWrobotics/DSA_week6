@@ -5,7 +5,7 @@
 #include <cstdlib>
 using namespace std;
 
-# define LENGTH 20  //defines the size of the stack
+# define LENGTH 12  //defines the size of the stack
 
 //creating a class for Create nodes for linked list
 class Node{
@@ -114,20 +114,32 @@ void generateRandomArray(int arr[], int length){
 
 int main(){
     cout<<"Linked List implementation of a Stack"<<endl;
-    int arr[LENGTH];
+    //int arr[LENGTH]; //uncomment use random values
 
-    generateRandomArray(arr, LENGTH);
+    //generateRandomArray(arr, LENGTH);  //uncomment use random values
 
     clock_t start1 = clock();
 
     Stack stack;
 
-    for(int j=0; j < LENGTH; j++){
+    //for(int j=0; j < LENGTH; j++){ //uncomment use random values
 
-        stack.push(arr[j]);
+    //    stack.push(arr[j]); 
     
-    }
+    //}                        
 
+    stack.push(51);      //comment when  using random values
+    stack.push(65);     //comment when  using random values
+    stack.push(0);      //comment when  using random values
+    stack.push(14);     //comment when  using random values
+    stack.push(41);     //comment when  using random values
+    stack.push(103);    //comment when  using random values
+    stack.push(15);     //comment when  using random values
+    stack.push(8);      //comment when  using random values
+    stack.push(35);     //comment when  using random values
+    stack.push(23);     //comment when  using random values
+    stack.push(53);
+    stack.push(73);
     stack.Display();
     cout << "Top element is " << stack.stack_top() << endl;
     stack.pop();
